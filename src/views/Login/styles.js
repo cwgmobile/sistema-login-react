@@ -32,12 +32,14 @@ const styles = makeStyles(() => ({
 	},
 	input: {
 		marginBottom: 20,
+		
 	},
 	copyright: {
 		fontSize: 14,
 		marginTop: 20,
 		width: 300,
 		textAlign: "center",
+		
 	},
 }));
 
