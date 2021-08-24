@@ -1,20 +1,18 @@
-import {Connection, createConnection,getConnection} from "typeorm";
+import { createConnection,getConnection} from "typeorm";
 
 const DBConnect = async ()=>{
-    let connection: Connection = getConnection();
 
-    if(connection){
-     await connection.connect();
-
-} else{
-    await createConnection();
-}
+    try{
+    getConnection();
+    } catch(error){
+      await createConnection();
+    }
 console.log("DATABASE CONECTADO COM SUCESSO!");
 };
-const TryDBConnect = async (onError: Function, OnSuccess: Function)=>{
+const TryDBConnect = async (onError: Function, next: Function)=>{
   try{
     await DBConnect();
-    OnSuccess();  
+    next();  
   } catch(error){
       onError();
   }
