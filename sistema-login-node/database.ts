@@ -9,6 +9,8 @@ const DBConnect = async ()=>{
     }
 console.log("DATABASE CONECTADO COM SUCESSO!");
 };
+
+
 const TryDBConnect = async (onError: Function, next: Function)=>{
   try{
     await DBConnect();
