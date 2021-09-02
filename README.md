@@ -5,10 +5,10 @@
 -   [x] Criação de tela de login (Input, Button)
 -   [x] Estilização da tela de login
 -   [x] Criação de states (useState - React Hooks)
--   [ ] Criação contexts (useContext - React Hooks)
--   [ ] Criação de tela do usuário logado
--   [ ] Integração com o back end
+-   [x] Integração com o back end
+-   [x] Criação contexts (useContext - React Hooks)
 -   [ ] Persistência de dados (Login - localStorage)
+-   [ ] Criação de tela do usuário logado
 
 # MySQL
 
@@ -22,9 +22,9 @@
 -   [x] Instalar dev libs (express, node)
 -   [x] Configurar o TypeScript (npm tsc --init)
 -   [x] Configurar a base de dados
--   [ ] Criar as rotas
--   [ ] Criar as entities
--   [ ] Criar as controllers
+-   [x] Criar as rotas
+-   [x] Criar as entities
+-   [x] Criar as controllers
 
 # GIT
 

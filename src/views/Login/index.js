@@ -5,6 +5,7 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import styles from "./styles";
 import logo from "../../img/logo-soitech.png";
+import {AuthContext} from "../../ctx/autenticacao";
 
 const Login = () => {
 	const {
@@ -15,11 +16,14 @@ const Login = () => {
 		containerLogin,
 		input,
 		copyright,
+
 	} = styles();
 
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [isDisabled, setIsDisabled] = useState(true);
+
+	const{entrar} =useEffect(AuthContext)
 
 	useEffect(() => {
 		if (email !== "" && password !== "") {
@@ -55,8 +59,10 @@ const Login = () => {
 							variant="contained"
 							color="primary"
 							disabled={isDisabled}
+							onClick={() => entrar(email,password)}
 						>
 							Entrar
+						
 						</Button>
 						<span className={copyright}>
 							Sistema de login, desenvolvido pelos alunos do curso
