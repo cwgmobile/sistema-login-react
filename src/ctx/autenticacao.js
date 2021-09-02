@@ -15,7 +15,7 @@ const AuthProvider =({children}) =>{
 				if (retorno.data.erro) {
 					alert(retorno.data.erro);
 				} else {
-					console.log(retorno);
+					setUsuarioLogado(retorno.data);
 				}
 			})
 			.catch((erro) => {
