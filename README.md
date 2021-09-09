@@ -7,8 +7,8 @@
 -   [x] Criação de states (useState - React Hooks)
 -   [x] Integração com o back end
 -   [x] Criação contexts (useContext - React Hooks)
--   [ ] Persistência de dados (Login - localStorage)
--   [ ] Criação de tela do usuário logado
+-   [x] Persistência de dados (Login - localStorage)
+-   [x] Criação de tela do usuário logado
 
 # MySQL
 
